@@ -1,0 +1,116 @@
+@import "../../styles/variables.scss";
+@import "../../styles/variables.scss";
+
+.m-header {
+  width: 100%;
+  background-color: $whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    height: 80px;
+    transition: 800ms;
+
+    &-logo {
+      height: 60px;
+      width: 20%;
+      cursor: pointer;
+      transition: 500ms;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &-option {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+
+      &-opt {
+        text-decoration: none;
+        position: relative;
+
+        a {
+          color: $black;
+          font-weight: bold;
+          font-family: "Roboto-Bold";
+        }
+
+        &__line {
+          position: absolute;
+          top: 110%;
+          left: 0;
+          height: 3px;
+          width: 0%;
+          background-color: $carulean-crayola;
+          transition: 800ms;
+        }
+      }
+
+      &-opt:link {
+        text-decoration: none;
+        color: inherit;
+        cursor: auto;
+      }
+
+      &-opt:visited {
+        text-decoration: none;
+        color: inherit;
+        cursor: auto;
+      }
+
+      &-opt:hover {
+        .m-header__upper-option-opt__line {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 300px;
+    height: 28px;
+    border-bottom-left-radius: 5px;
+    top: 80px;
+    right: 0;
+    background-color: $carulean-crayola;
+    transition: 800ms;
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+
+    &-icon {
+      height: 22px;
+      padding: 0 20px;
+      fill: $white;
+      cursor: pointer;
+    }
+  }
+}
+
+.upper-smaller {
+  height: 50px;
+}
+
+.logo-smaller {
+  height: 38px;
+}
+
+.bottom-smaller {
+  top: 50px;
+}

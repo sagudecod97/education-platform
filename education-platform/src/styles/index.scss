@@ -1,0 +1,28 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "./icons.scss";
+@import "./themes.scss";
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: local("../assets/fonts/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("../assets/fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Roboto-Regular";
+}

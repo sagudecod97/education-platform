@@ -1,0 +1,13 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.a-button {
+  height: 37px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: $carulean-crayola;
+  color: $white;
+  font-weight: 600;
+  cursor: pointer !important;
+}
